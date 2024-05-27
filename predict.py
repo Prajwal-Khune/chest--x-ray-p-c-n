@@ -21,7 +21,7 @@ input_dtype = input_details[0]['dtype']
 output_dtype = output_details[0]['dtype']
 
 # Define class names
-class_names = ['Covid', 'Viral Pneumonia', 'Normal']
+class_names = ['Tuberculosis', 'Viral Pneumonia', 'Normal']
 
 st.set_page_config(page_title="Chest X-ray Classifier", layout="wide")
 col1, col2 = st.columns([1, 1])  # Divide the page into two columns
@@ -29,7 +29,7 @@ col1, col2 = st.columns([1, 1])  # Divide the page into two columns
 # Left column - Image upload
 with col1:
     st.title('Chest X-Ray Classification')
-    st.markdown('<h3 style="font-weight:normal;">Classify Chest X-ray images into COVID-19, Pneumonia, or Normal.</h3>', unsafe_allow_html=True)
+    st.markdown('<h3 style="font-weight:normal;">Classify Chest X-ray images into Tuberculosis, Pneumonia, or Normal.</h3>', unsafe_allow_html=True)
 
     # Image upload
     uploaded_file = st.file_uploader("Upload an image and click the 'Predict Now' button.", type=["jpg", "jpeg", "png"])
